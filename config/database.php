@@ -8,7 +8,11 @@ $password   = getenv("DB_PASSWORD") ?: "";
 
 try
 {
-    $con = new PDO("mysql:host=$servername;dbname=$dbname",$username,$password);
+    $con = new PDO(
+    "mysql:host=$servername;port=$port;dbname=$dbname",
+    $username,
+    $password
+);
     $con->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
 }
 catch(PDOException $e)
