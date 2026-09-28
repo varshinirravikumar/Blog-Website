@@ -1,0 +1,28 @@
+.container1 {
+    background-color: rgb(245, 106, 106);
+    width: 850px;
+    min-height: 900px;
+    border-radius: 10px;
+}
+.container2 {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content-container 
+{
+    background-color: #f4f4f4;
+    width: 700px;
+    border-radius: 20px;
+    text-align: justify;
+    padding: 15px;
+    line-height: 2;
+    font-size: 18px;
+    margin: 65px auto 14px auto;
+}
+.title-content
+{
+    margin-left: 58px;
+  margin-top: 58px;
+}
