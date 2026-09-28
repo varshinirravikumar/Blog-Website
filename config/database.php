@@ -1,9 +1,10 @@
 <?php
 
-$servername ="localhost";
-$dbname ="Blog";
-$username ="root";
-$password ="";
+$servername = getenv("DB_HOST") ?: "localhost";
+$port       = getenv("DB_PORT") ?: "3307";
+$dbname     = getenv("DB_NAME") ?: "Blog";
+$username   = getenv("DB_USERNAME") ?: "root";
+$password   = getenv("DB_PASSWORD") ?: "";
 
 try
 {
