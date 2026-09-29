@@ -8,7 +8,23 @@ require_once "../controller/forgotcontroller.php";
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title><link rel="stylesheet" href="signinstyle2.css">
+    <title>Document</title>
+    <style>
+    .show-password 
+{
+    display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 16px;
+  color: blue;
+  cursor: pointer;
+  margin: 10px;
+}
+    </style>
+    
+    
+    
+    <link rel="stylesheet" href="signinstyle2.css">
 <body>
     
     <div class="signin-container">
@@ -28,8 +44,13 @@ require_once "../controller/forgotcontroller.php";
     <div class ="form-row1">
     <label id="wrap">Enter new Password here</label>
 <div class="sameline">
-    <input type ="password" name="newpassword" id="myInput">    
-    <input type="checkbox" onclick="myFunction()" id="checkbox"><p>Show Password</p></div>
+<input type="password" name="newpassword" id="myInput">
+
+<label class="show-password">
+    <input type="checkbox" id="checkbox" onclick="myFunction()">
+    Show Password
+</label>
+</div>
 </div>
     <div class ="form-row">
     <input type ="submit" name = "update" value="Update Password"></div>

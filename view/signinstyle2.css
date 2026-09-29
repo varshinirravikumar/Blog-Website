@@ -103,18 +103,22 @@ label
     width: 60px;
     height: 19px;
 }
-.sameline #checkbox
+.sameline
 {
     display: flex;
-  flex-direction: row;
-  margin-top: 8px;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
 }
-p
+
+#checkbox
 {
-    font-size: 14px;
-  color: blue;
-  margin-top: -19px;
+    width: 16px !important;
+    height: 16px !important;
+    margin: 0;
 }
+
+
 h2
 {
     margin-bottom: 84px;
