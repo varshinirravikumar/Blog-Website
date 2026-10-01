@@ -5,6 +5,12 @@ $dbname     = "Blog";
 $username   =  "root";
 $password   = "";
 
+// $servername = "sql111.infinityfree.com";
+// $dbname     = "if0_43059138_Blog";
+// $username   =  "if0_43059138";
+// $password   = "80560070";
+
+
 try
 {
     $con = new PDO("mysql:host=$servername;dbname=$dbname",$username,$password);
