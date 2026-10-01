@@ -10,13 +10,6 @@ require_once "../controller/controllersignin.php";
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="signinstyle2.css">
-    <style>
-        /* a
-        {
-            text-decoration: none;
-            color:black;
-        } */
-    </style>
 </head>
 <body>
     <div class="signin-container">
@@ -28,10 +21,6 @@ require_once "../controller/controllersignin.php";
         {?>
             <p style="color: red;"><?php echo $error; ?></p>
         <?php } ?>
-
-
-
-
 
 
     <form method ="post" action="signin.php">
